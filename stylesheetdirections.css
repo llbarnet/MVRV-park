@@ -1,16 +1,22 @@
 *{border: 1px solid rgba(0,0,0,0.3)}
 .header{
-  background-image: url(tulipborder.png);
+  display: block;
   font-family: Lobster, cursive, serif;
 }
-
+#imgborder{
+  max-height: 50%;
+  width:auto;
+}
 #direc{
   color: black;
   font-family: libre Baskerville, serif;
   font-size: 30px;
-  float: left;
-  text-align: center;
-  width: 50%;
+  height:auto;
+  max-width:30%;
+  float:left;
+  object-fit: contain;
+  margin-left: auto;
+
 
 }
 
@@ -20,24 +26,31 @@
 }
 
 #picmap{
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  float:right;
+  height:auto;
+  max-width: 48%;
+  float:left;
+  object-fit: contain;
+  margin-left: auto;
+  border: 5px solid black;
 
+  }
 
-}
-.footer {
+  body{
+    background-color: #82BF66;
+    height: auto;
+    margin-bottom: 100px;
+    clear: both;
+    overflow-y: scroll;
+  }
+
+  .footer {
     text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #F69;
-    color: white;
-
+    color: black;
+    max-height: 100px;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
   }
-
-body{
-  background-color: FFFAF7;
-}
