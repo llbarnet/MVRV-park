@@ -1,21 +1,53 @@
-*{border: 1px solid rgba(0,0,0,0.3)}
+/**{border: 1px solid rgba(0,0,0,0.3)}*/
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+
 .header{
   display: block;
   font-family: Lobster, cursive, serif;
+
 }
-#imgborder{
+
+h1 {
+  font-size: 2rem;
+}
+
+.parent{
+max-width: 80%;
+height: auto;
+margin:auto;
+
+
+
+}
+
+#borderimg{
   max-height: 50%;
-  width:auto;
+  max-width: 100%;
+  object-fit: contain;
+  background-color: white;
 }
 #direc{
   color: black;
   font-family: libre Baskerville, serif;
   font-size: 30px;
   height:auto;
-  max-width:30%;
+  max-width:40%;
   float:left;
   object-fit: contain;
   margin-left: auto;
+  padding-left: 30px;
 
 
 }
@@ -24,13 +56,24 @@
   display: inline-block;
 
 }
+.linkmap {
+max-width: 49%;
+height: auto;
+float: right;
+margin-right: auto;
+object-fit: contain;
+
+
+
+}
 
 #picmap{
   height:auto;
-  max-width: 48%;
-  float:left;
+  max-width: 90%;
   object-fit: contain;
-  margin-left: auto;
+
+
+
   border: 5px solid black;
 
   }
@@ -41,8 +84,12 @@
     margin-bottom: 100px;
     clear: both;
     overflow-y: scroll;
-  }
+    text-align: center;
 
+  }
+h3 {
+  font-family: libre Baskerville, serif;
+}
   .footer {
     text-align: center;
     position: fixed;
