@@ -1,0 +1,87 @@
+*{border: 1px solid rgba(0,0,0,0.3)}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+
+.header{
+  display: block;
+  font-family: Lobster, cursive, serif;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Lobster, cursive, serif;
+}
+
+#borderimg{
+  max-height: 50%;
+  max-width: 100%;
+  object-fit: contain;
+  background-color: white;
+}
+
+.parent{
+max-width: 80%;
+height: auto;
+margin:auto;
+}
+
+p {
+font-family: 'Libre Baskerville', serif;
+max-width: 48%;
+height: auto;
+flex-direction: column;
+
+}
+
+#broll {
+ max-width: 48%;
+ height: auto;
+
+}
+
+.top {
+  display: inline-block;
+  align-items: center;
+}
+
+.bottom {
+  display: inline-block;
+  align-items: center;
+}
+
+
+
+body{
+    background-color: #82BF66;
+    height: auto;
+    margin-bottom: 100px;
+    clear: both;
+    overflow-y: scroll;
+    text-align: center;
+
+  }
+
+}
+  .footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    max-height: 100px;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+  }
