@@ -1,4 +1,5 @@
-/**{border: 1px solid rgba(0,0,0,0.3)}*/
+/*{border: 1px solid rgba(0,0,0,0.3)}*/
+
 a:link {
   text-decoration: none;
   color: black;
@@ -13,41 +14,41 @@ a:hover {
 }
 
 
-.header{
-  display: block;
-  font-family: Lobster, cursive, serif;
+.content {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
 
-}
+  #borderimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+  }
 
 h1 {
-  font-size: 2rem;
-}
+    font-size: 3rem;
+    font-family: Lobster, cursive, serif;
+    text-align: center;
 
-.parent{
-max-width: 80%;
-height: auto;
-margin:auto;
+  }
 
 
-
-}
-
-#borderimg{
-  max-height: 50%;
-  max-width: 100%;
-  object-fit: contain;
-  background-color: white;
-}
 #direc{
   color: black;
   font-family: libre Baskerville, serif;
-  font-size: 30px;
+  font-size: 1em;
   height:auto;
-  max-width:40%;
+  max-width:45%;
   float:left;
   object-fit: contain;
   margin-left: auto;
   padding-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  
 
 
 }
@@ -56,48 +57,38 @@ margin:auto;
   display: inline-block;
 
 }
+
 .linkmap {
 max-width: 49%;
 height: auto;
 float: right;
 margin-right: auto;
 object-fit: contain;
-
-
-
 }
 
 #picmap{
   height:auto;
   max-width: 90%;
   object-fit: contain;
-
-
-
   border: 5px solid black;
 
   }
 
-  body{
-    background-color: #82BF66;
-    height: auto;
-    margin-bottom: 100px;
-    clear: both;
-    overflow-y: scroll;
+
+
+  h3 {
     text-align: center;
+    font-family: Lobster;
+    font-size: 1.5em;
+  }
+
+.footer {
+    text-align: center;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
 
   }
-h3 {
-  font-family: libre Baskerville, serif;
-}
-  .footer {
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: black;
-    max-height: 100px;
-    background-color: white;
-    font-family: 'Libre Baskerville', serif;
+
+body {
+    background-color: #82BF66;
   }
