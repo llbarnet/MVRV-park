@@ -1,0 +1,102 @@
+*{border: 1px solid rgba(0,0,0,0.3)}*/
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+
+.content {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+
+  #borderimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+  }
+
+h1 {
+    font-size: 3rem;
+    font-family: Lobster, cursive, serif;
+    text-align: center;
+
+  }
+
+  .grid-container {
+  object-fit: contain;
+  display: inline-grid;
+  grid-column-gap: 0px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 0px;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6  {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid-item3 {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+.grid-item6{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+img {
+object-fit: contain;
+max-width: 60%;
+height: auto;
+
+
+}
+
+p {
+ font-family: 'Libre Baskerville', serif;
+ height: auto;
+ text-align: center;
+ font-size: 1.0rem;
+ margin:auto;
+ max-width: 50%;
+}
+
+
+h3 {
+  text-align: center;
+  font-family: Lobster;
+  font-size: 1.5em;
+}
+
+
+.footer {
+    text-align: center;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+
+  }
+
+body {
+    background-color: #82BF66;
+  }
