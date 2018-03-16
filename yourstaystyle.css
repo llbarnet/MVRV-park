@@ -1,4 +1,4 @@
-*{border: 1px solid rgba(0,0,0,0.3)}*/
+/*{border: 1px solid rgba(0,0,0,0.3)}*/
 html {
   font-size: 16px;
 }
@@ -40,7 +40,7 @@ h1 {
   .grid-container {
   object-fit: contain;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-column-gap: 0px;
   grid-auto-rows: minmax(100px, auto);
   background-color: white;
@@ -72,6 +72,7 @@ grid-row-end: 4;
 
 .grid-item7{
   grid-column-start: 1;
+  justify-self: center;
 }
 
 img {
@@ -88,19 +89,21 @@ p {
  text-align: center;
  font-size: 1.5rem;
  margin:auto;
- max-width: 100%;
+ width: auto;
 }
 
 .rates{
 float: left;
 display: inline-grid;
+margin: auto;
+padding-right: 0px;
+text-align: center;
 
 }
 ul {
   float:left;
+  font-size: 1.5rem;
   padding: 0px;
-  margin: 0px;
-  font-size: 1rem;
 }
 
 #rate {
@@ -108,7 +111,8 @@ ul {
  font-family: 'Lobster', serif;
  font-size: 1.5em;
  padding: 0px;
- margin: 0px;
+ margin: auto;
+ text-align: center;
 
 }
 
@@ -132,4 +136,10 @@ h3 {
 
 body {
     background-color: #82BF66;
+  }
+
+  @media screen and (max-width:480px){
+  p {
+    font-size: .3px;
+  }
   }
