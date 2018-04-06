@@ -138,8 +138,4 @@ body {
     background-color: #82BF66;
   }
 
-  @media screen and (max-width:480px){
-  p {
-    font-size: .3px;
-  }
-  }
+  
