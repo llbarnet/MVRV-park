@@ -1,0 +1,197 @@
+div {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Lobster", serif;
+  color: #353C5B;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+h3 {
+  padding-top: 0px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Lobster", serif;
+  color: black;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+
+}
+
+#headpic {
+  max-width: 100%;
+  Overflow: none;
+  height:auto;
+}
+
+#aboutpic {
+  text-align: center;
+  max-width: 600px;
+  Overflow: none;
+  height:auto;
+  padding: 20px;
+}
+
+#picmap {
+  text-align: center;
+  max-width: 500px;
+  Overflow: none;
+  height:auto;
+  padding: 20px;
+}
+
+a {
+font-size: 3rem;
+font-family: "Oswald", serif;
+color: #FEAB49;
+cursor: pointer;
+
+}
+
+.buttons {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-gap: 100px;
+  text-align: center;
+}
+
+#about, #yourstay, #directions {
+  background-color: #FF0D3E;
+}
+
+.about_info {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  grid-gap: 10px;
+  background-color: #F9CE57;
+}
+.rates_info {
+  text-align: center;
+  max-width: 100%;
+  display: grid;
+  grid-template: auto auto / auto auto;
+  grid-gap: 10px;
+  background-color: white;
+}
+
+.rates_info div:nth-child(3) {
+  grid-row: 1 / span 2;
+}
+
+.directions_info {
+  text-align: center;
+  max-width: 100%;
+  display: grid;
+  grid-template: auto / auto;
+  grid-gap: 10px;
+  background-color: #BEEB9F;
+}
+
+.parainfo {
+  margin-top: 50px;
+  font-size:1rem;
+  font-family: 'Roboto', serif;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+
+/* Here is the responsive css styling */
+
+@media only screen and (max-width: 1000px) {
+  #headpic {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Lobster", serif;
+    color: #353C5B;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  h3 {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Lobster", serif;
+    color: black;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-gap: 10px;
+    text-align: center;
+
+  }
+
+  .about_info {
+    display: grid;
+    grid-template: auto / auto;
+    grid-gap: 10px;
+    background-color: #F9CE57;
+  }
+
+  .rates_info {
+    text-align: center;
+    max-width: 100%;
+    display: grid;
+    grid-template: auto / auto;
+    grid-gap: 10px;
+    background-color: white;
+  }
+
+  .parainfo {
+    margin-top: 10px;
+    font-size:1rem;
+    font-family: 'Roboto', serif;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .directions_info {
+    text-align: center;
+    max-width: 100%;
+    display: grid;
+    grid-template: auto / auto;
+    grid-gap: 10px;
+    background-color: #BEEB9F;
+  }
+
+  #picmap {
+    text-align: center;
+    max-width: 300px;
+    Overflow: none;
+    height:auto;
+    padding: 10px;
+  }
+
+  #aboutpic {
+    text-align: center;
+    max-width: 300px;
+    Overflow: none;
+    height:auto;
+    padding: 10px;
+  }
+}
