@@ -119,6 +119,10 @@ cursor: pointer;
 /* Here is the responsive css styling */
 
 @media only screen and (max-width: 1000px) {
+  body {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
   #headpic {
     display: none;
   }
