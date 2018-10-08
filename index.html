@@ -1,34 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link type='text/css' rel='stylesheet' href='index.css'/>
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lobster" rel="stylesheet", href="stylesheet.css">
-<title>MV RV PARK</title>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lobster|Roboto|Oswald" rel="stylesheet", href="stylesheet.css"/>
+    <link type='text/css' rel='stylesheet' href='css/stylesheet.css'/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8">
 
-</head>
-<body>
-<div class='content'>
-<div class='headbar'>
-  <img id='logopic' src='logoMV2.png'/>
-</div>
+<!-- JQuery script for interactive divs -->
+    <script>
 
-<div class='pages'>
-<h3 id="page1"><a href="Your.Stay.html">Rates and Info</a></h3>
-<h3 id='break'> </h3>
-<h3 id="page2"><a href="About.html">About</a></h3>
-<h3 id='break1'> </h3>
-<h3 id="page3"><a href="Directions.html">Directions</a></h3>
+    $(document).ready(function(){
+
+      $(".TargetDiv").hide();
+      $("#about").click(function(){
+        $(".TargetDiv").hide()
+        $("#div1").show()
+      });
+
+      $("#yourstay").click(function(){
+        $(".TargetDiv").hide()
+        $("#div2").show()
+      });
+
+      $("#directions").click(function(){
+        $(".TargetDiv").hide()
+        $("#div3").show()
+      });
+
+    });
+
+    </script>
+
+
+    <title>MVRV Park</title>
+
+  </head>
+  <div class='wrapper'>
+    <img id='headpic' src='images/pano.jpg'/>
+  </div>
+  <div class="headtitle">
+    <h1>Mount Vernon RV Park</h1>
+    <h3>Use Mount Vernon RV Park as a jumping off point to exploring, spending a few months in the Skagit Valley, or just a night on your way to your next adventure.</h3>
+  </div>
+
+  <body>
+  <div class='buttons'>
+
+  <a id='about' target='1'>About</a>
+  <a id='yourstay' target='2'>Your Stay</a>
+  <a id='directions' target='3'>Directions</a>
+  </div>
+</br>
+</br>
+
+  <div id='div1' class="TargetDiv">
+    <div class="about_info">
+  <div class='parainfo'> The park is quiet and fits perfectly into the Pacific Northwest complimenting Skagit Valley’s farmland and tulip fields. The park is close to downtown Mount Vernon where you can find delicious food, handcrafted beer, and take a walk along the Skagit River. It offers easy access to nearby Anacortes, the Ferries, and the surrounding San Juan Islands.</div>
+  <div><img id='aboutpic' src='images/park.jpg'/></div>
+  <div class='parainfo'>The park offers 81 full hookup sites with electric, water, sewer, and cable. Each space has plenty of room for your home on wheels. Overflow sites available if needed. Pets are welcome upon approval and there are grassy patches and a dog area to play.</div>
+
+    </div>
+  </div>
+
+  <div id='div2' class="TargetDiv">
+    <div class='wrapper'>
+    <div class="rates_info">
+    <div class="parainfo">Mount Vernon RV Park offers competitive Daily, Weekly, Monthly Rates, and we offer discounts to Good Sam Members! Call 360-424-8787 for rates and availability.</div>
+    <div class="parainfo">The office building offers showers, coin-op washers and dryers, mail cubbies for guests, and an indoor area full of couches and tables where you can find plenty of books and puzzles. There is recently updated wifi throughout the park. The park is always landscaped and tidy. Propane available on site so you don’t have to go anywhere to top off!</div>
+
+    <div><a href="http://www.goodsamclub.com/default.aspx?referrerID=491344&pkgcode=2TT9"> <img id="goodsamlink" alt="Join Today!" src="http://images.goodsam.com/goodsamnetwork.com/white-336x280.jpg" style="width:336px;height:280px;" /></a></div>
+  </div>
 </div>
-<div class='desktopimgs'>
-  <img id='office' src='office2.jpg'/>
-  <img id='entry' src='entry1.jpg'/>
 </div>
+  <div id='div3' class="TargetDiv">
+    <div class="directions_info">
+      <div class='parainfo'> Mount Vernon RV Park is located just a half mile from downtown Mount Vernon and the Skagit River. It’s nearby and easily accessible from both I-5 North and South. A few miles from the interstate exits, the park sits nestled between the poplar trees creating an environment of convenience and privacy.</div>
+      <div> <a href='https://www.google.com/maps/search/google+maps+mount+vernon+rv+park+wa/@48.4230869,-122.3504064,16.73z' target="_blank"><img id='picmap' src="images/mapscreenshot.png"/></a></div>
+
+    </div>
+  </div>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 <div class='footer'>
-<h4>MOUNT VERNON RV PARK         1229 MEMORIAL HWY MT. VERNON WA   <br>     360-424-8787</h4>
+<h4>MOUNT VERNON RV PARK       </br>    1229 MEMORIAL HWY MT. VERNON, WA 98273     </br>    360-424-8787</h4>
 </div>
 
-</div>
-</body>
+
+  </body>
 </html>
