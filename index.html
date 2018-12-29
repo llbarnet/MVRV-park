@@ -10,30 +10,38 @@
     <meta charset="utf-8">
 
 <!-- JQuery script for interactive divs -->
-    <script>
+<script>
 
-    $(document).ready(function(){
+   $(document).ready(function(){
 
-      $(".TargetDiv").hide();
-      $("#about").click(function(){
-        $(".TargetDiv").hide()
-        $("#div1").show()
-      });
+     $(".TargetDiv").hide();
+     $("#about").click(function(){
+       $(".TargetDiv").hide()
+       $("#div1").show()
+       $('html,body').animate({
+       scrollTop: $("#div1").offset().top},
+       'slow');
+     });
 
-      $("#yourstay").click(function(){
-        $(".TargetDiv").hide()
-        $("#div2").show()
-      });
+     $("#yourstay").click(function(){
+       $(".TargetDiv").hide()
+       $("#div2").show()
+       $('html,body').animate({
+       scrollTop: $("#div2").offset().top},
+       'slow');
+     });
 
-      $("#directions").click(function(){
-        $(".TargetDiv").hide()
-        $("#div3").show()
-      });
+     $("#directions").click(function(){
+       $(".TargetDiv").hide()
+       $("#div3").show()
+       $('html,body').animate({
+       scrollTop: $("#div3").offset().top},
+       'slow');
+     });
 
-    });
+   });
 
-    </script>
-
+</script>
 
     <title>MVRV Park</title>
 
